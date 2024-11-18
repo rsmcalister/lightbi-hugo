@@ -16,7 +16,7 @@
 
                 <div class="post-entry">
                     {{ if .Description }}
-                    {{ .Description }}
+                    {{ .Description | .Page.RenderString }}
 
                     {{ else }}
                     {{ .Summary }}
